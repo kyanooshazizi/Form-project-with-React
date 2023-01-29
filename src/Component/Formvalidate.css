@@ -1,0 +1,110 @@
+:root{
+    --colorPattern:blue;
+    --colorShadow:#b8b8c1f8;
+}
+body{
+    background-color: #efefef;
+    box-sizing: border-box;
+}
+.wrapper{
+display: flex;
+justify-content: center;
+}
+.wrapper-form{
+    background-color: #fff;
+ padding: 10px 8px;
+ width: 350px;
+ border-radius: 8px;
+}
+h3{
+    text-align: center;
+    color:var(--colorPattern);
+}
+.wrapper-form input{
+    display: block;
+    width: 90%;
+    border: none;
+    box-shadow:0px 0px 1px 1px var(--colorShadow);
+    border-radius: 8px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0px auto;
+
+}
+.wrapper-form input:focus{
+    outline: 0px;
+}
+.wrapper-form label{
+    display: block;
+    text-align: right;
+    padding: 10px 20px;
+    color: dimgray;
+}
+/* checkbox */
+.wrapper-form .check {
+    display: flex;
+    justify-content: end;
+    padding: 16px 16px;
+    align-items: center;}
+
+    .wrapper-form .check label{
+        display: inherit;
+        padding: 0px;
+        text-align: inherit;
+        padding: 0px 10px;
+        color:var(--colorPattern);
+    }
+    .wrapper-form .check input {
+        display: inherit;
+        width: inherit;
+        margin: 0px;
+        width: 17px;
+        box-shadow: none;
+    }
+   
+    /* start submit butten */
+    input[type="submit"]{
+background-color:var(--colorPattern);
+color: white;
+width: 20%;
+font-weight: bolder;
+border-radius:2px;
+padding: 8px;
+box-shadow:2px 2px 1px 2px var(--colorPattern);
+margin: 0px 8px;
+    }
+.submitstyle{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 30px;
+    }
+    .submitstyle a{
+        text-decoration: none;
+    color: var(--colorPattern);
+    font-size: 16px;
+    border: 1px solid var(--colorPattern);
+    padding: 6px 22px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0px 0px;
+    cursor: pointer;
+    }
+    /* end submit butten */
+    span{
+        font-size: 14px;
+        color: red;
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .wrapper-form .accept{
+    color: green;
+    font-size: 18px;
+   }
+   /* اعتبار سنجی input */
+   .wrapper-form .error{
+    box-shadow:0px 1px 2px red;
+   }
+   .wrapper-form .success{
+    box-shadow:0px 1px 2px green;
+   }
